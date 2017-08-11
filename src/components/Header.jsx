@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Segment, Menu, Image, Container } from 'semantic-ui-react';
-import header from '../images/header.jpg'
-
+import { Segment, Menu, Image, Container, Divider } from 'semantic-ui-react';
+import header from '../images/header1.jpeg'
+import HomePageBlog from './HomePageBlog.jsx'
+import FamilyCard from '../containers/Family';
 
 class Header extends Component {
   state = { activeItem: 'Home' }
@@ -22,11 +23,15 @@ class Header extends Component {
     </Menu.Menu>
     </Menu>
     
-    <div className='header-image'>
-     <Container fluid className='header-image'>
-          <Image src={header} alt='fam' fluid />
+
+     {/*<Container fluid className='header-image'>
+          <Image src={header} alt='fam' width='100%' height='200px' />
      </Container>
-     </div>
+     */}
+    <br/>
+
+     <FamilyCard />
+     {/*<HomePageBlog />*/}
       </div>
     )
   }

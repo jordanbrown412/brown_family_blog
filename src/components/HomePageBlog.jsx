@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Segment, Image, Grid } from 'semantic-ui-react';
+import headshot from '../images/headshot.jpg'
 
 const HomePageBlog = props => {
 //    creating a variable that receives BlogPost object from props
@@ -8,19 +9,44 @@ const HomePageBlog = props => {
     };
 
     return (
-        
-        <div>
-
-            {/* Image and Title of HomePage BlogPost  */}
-            <div>  
-                <img src={}/>
-                <h2></h2>
-            </div>
-           
-           {/* Content of BlogPost  */}
-            <div>
-                <h3></h3>
-            </div>
-        </div>
+        <Grid>
+            <Grid.Column width='13'>
+       <Segment>
+    <Image src={headshot} size='medium' floated='left' />
+    <p>
+      Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip
+      detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos
+      choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
+    </p>
+    <p>
+      Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip
+      detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos
+      choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
+    </p>
+    <p>
+      Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip
+      detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos
+      choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
+    </p>
+    <p>
+      Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip
+      detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos
+      choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
+    </p>
+    <p>
+      Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip
+      detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos
+      choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
+    </p>
+    <p>
+      Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam alia facete scriptorem, est autem aliquip
+      detraxit at. Usu ocurreret referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque electram, eos
+      choro alterum definiebas in. Vim dolorum definiebas an. Mei ex natum rebum iisque.
+    </p>
+    </Segment> 
+    </Grid.Column>
+    </Grid>
     )
 }
+
+export default HomePageBlog;
