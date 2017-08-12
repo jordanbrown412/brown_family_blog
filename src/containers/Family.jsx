@@ -1,10 +1,10 @@
 import React from 'react'
-import { Grid, Card, Image, Icon } from 'semantic-ui-react'
+import { Grid, Card, Image, Icon, Segment } from 'semantic-ui-react'
 import headshot from '../images/headshot.jpg'
 
 const FamilyCard = () => (
 <Grid> 
-  <Grid centered columns={3}>
+  <Grid centered columns='equal'>
     <Grid.Row>
       <Grid.Column>
        <Card>
