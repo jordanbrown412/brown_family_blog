@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import HomePage from './containers/HomePage';
-import Sidebar from './containers/Sidebar';
-import LoginForm from './components/LoginForm'
+import Main from './containers/Main';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-
-      <LoginForm/>
-
+      <Router>
+        
+        <div>
+      <Header/>
+      <Main />
       </div>
+     </Router>
     );
   }
 }

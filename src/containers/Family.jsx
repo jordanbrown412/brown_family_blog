@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Card, Image, Icon, Segment } from 'semantic-ui-react'
+import { Grid, Card, Image, Icon } from 'semantic-ui-react'
 import headshot from '../images/headshot.jpg'
 
 const FamilyCard = () => (

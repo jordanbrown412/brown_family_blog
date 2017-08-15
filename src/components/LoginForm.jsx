@@ -1,10 +1,9 @@
 import React from 'react';
-import { Card, Form, Input, Segment, Container, Grid, Header } from 'semantic-ui-react';
+import { Card, Form, Input, Grid, Header } from 'semantic-ui-react';
 import '../App.css';
 
 const LoginForm = () => (
     
-    <div>
     <Grid verticalAlign='middle' centered columns={1} className='login'>
     <Grid.Column width={7}>
     {/* <Segment basic> */}
@@ -24,10 +23,9 @@ const LoginForm = () => (
             </Form>
         </Card.Content>
     </Card>
-    {/* </Segment> */}
     </Grid.Column>
     </Grid>
-    </div>
+  
 )
 
 export default LoginForm;
