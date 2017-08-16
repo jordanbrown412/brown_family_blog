@@ -10,18 +10,18 @@ class Header extends Component {
   render() {
     const { activeItem } = this.state
     return (
-    <div>
-     <Menu  attached pointing secondary>
-             <Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}><Link to='/login'>Home</Link></Menu.Item>
-             <Menu.Item name='Family' active={activeItem === 'Family'} onClick={this.handleItemClick}><Link to='/'>Famiily</Link></Menu.Item>
-             <Menu.Item name='Blog' active={activeItem === 'Blog'} onClick={this.handleItemClick}>Blog</Menu.Item>
-     <Menu.Menu position='right'>
-             <Menu.Item name='CMS' active={activeItem === 'logout'} onClick={this.handleItemClick} />
-    </Menu.Menu>
-    </Menu>
-    <br/>
-    <br/>
-      </div>
+               <div>
+                      <Menu  attached pointing secondary>
+                          <Menu.Item name='Home' as={Link} to='/login' active={activeItem === 'Home'} onClick={this.handleItemClick} />
+                          <Menu.Item name='Family' as={Link} to='/' active={activeItem === 'Family'} onClick={this.handleItemClick} />
+                          <Menu.Item name='Blog' active={activeItem === 'Blog'} onClick={this.handleItemClick}>Blog</Menu.Item>
+                              <Menu.Menu position='right'>
+                                  <Menu.Item name='CMS' active={activeItem === 'logout'} onClick={this.handleItemClick} />
+                          </Menu.Menu>
+                      </Menu>
+                    <br/>
+                  <br/>
+              </div>
     )
   }
 }

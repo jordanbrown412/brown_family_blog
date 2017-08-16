@@ -6,17 +6,16 @@ const LoginForm = () => (
     
     <Grid verticalAlign='middle' centered columns={1} className='login'>
     <Grid.Column width={7}>
-    {/* <Segment basic> */}
     <Card fluid className='login'>
-        <Card.Content className='login-header'>
+        <Card.Content className='login-content login-header'>
             
-            <Header as='h2'textAlign='center'>
+            <Header inverted color='orange' floated='left' as='h2'textAlign='center'>
                 Login Page
             </Header>
             
         </Card.Content>
 
-        <Card.Content>
+        <Card.Content className='login-content'>
             <Form>
                 <Form.Field control={Input} label='Username' placeholder='Username' />
                 <Form.Field control={Input} label='Password' placeholder='password' />
